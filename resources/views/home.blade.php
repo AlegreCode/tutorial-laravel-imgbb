@@ -9,7 +9,7 @@
 </head>
 <body>
     <main class="bg-slate-900 h-[100vh] flex justify-center items-center">
-        <section class="w-[30%]">
+        <section class="w-full max-w-[400px] p-3">
             <h1 class="text-3xl text-stone-300 text-center py-10">Tutorial de Laravel e ImgBB</h1>
             <form action="" method="post">
                 <img src="https://fakeimg.pl/350x350/?text=IMG" class="w-[150px] h-auto mx-auto mb-10 rounded" id="preview-img">                
