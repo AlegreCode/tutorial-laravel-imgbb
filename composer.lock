@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c01fa0b35e7c915ca9f696dc5aa2848",
+    "content-hash": "9c034297e9eefdc507c86596eb917571",
     "packages": [
         {
             "name": "101infotech/imgbb",
