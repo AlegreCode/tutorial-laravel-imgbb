@@ -27,12 +27,12 @@
                 </form>
             </section>
         </section>
-        @isset($images)
+        @if($images->isNotEmpty())
             <section>
                 <h3 class="text-xl text-stone-300 text-center pb-4">GALERÍA</h3>
             </section>
             <x-galeria :images="$images"/>
-        @endisset
+        @endif
     </main>
     <script>
         const fileinput = document.querySelector("#fileinput");
