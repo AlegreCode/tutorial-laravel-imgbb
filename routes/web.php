@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [ImageController::class, 'show'])->name('home');
 
 Route::post('/', [ImageController::class, 'save'])->name('save-image');

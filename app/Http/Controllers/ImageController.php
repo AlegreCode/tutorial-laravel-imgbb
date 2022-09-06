@@ -4,12 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Image;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 use Infotech\ImgBB\ImgBB;
 
 class ImageController extends Controller
 {
-    //
     public function save(Request $request)
     {
         $data = ImgBB::image($request->file('fileimage'));
@@ -19,5 +17,11 @@ class ImageController extends Controller
         $image->save();
 
         return redirect()->route('home');
+    }
+
+    public function show(Request $request)
+    {
+        $data = Image::all();
+        return view('home', ['images' => $data]);
     }
 }
