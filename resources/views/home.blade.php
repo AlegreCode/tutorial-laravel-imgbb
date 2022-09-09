@@ -14,7 +14,7 @@
                 <h1 class="text-3xl text-stone-300 text-center py-10">Tutorial de Laravel e ImgBB</h1>
                 <form action="{{ route('save-image') }}" method="post" enctype="multipart/form-data">
                     @csrf
-                    <img src="https://fakeimg.pl/350x350/?text=IMG" class="w-[150px] h-auto mx-auto mb-10 rounded" id="preview-img">                
+                    <img src="https://fakeimg.pl/350x350/?text=500x500" class="w-[150px] h-auto mx-auto mb-10 rounded" id="preview-img">                
                                     
                     <label class="block mb-10">
                         <span class="sr-only">Choose File</span>
